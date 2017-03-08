@@ -1,0 +1,44 @@
+<smil xmlns="http://www.w3.org/2001/SMIL20/Language">
+  <head>
+    <meta content="example.ismc" name="clientManifestRelativePath" />
+    <meta content="Unified Streaming Platform (USP)" name="creator" />
+    <meta content="sample_aes_streamingkeydelivery" name="hls_playout" />
+    <meta content="true" name="mpd_playout" />
+    <meta content="4" name="hls_client_manifest_version" />
+    <paramGroup id="hls">
+      <meta content=":1ACBCA2877D30E4786FC1791E0654981" name="key" />
+      <meta content="476A8F8158018BAFFE5E34E8B9A9830D" name="key_iv" />
+      <meta content="skexample.ismd://fairplay-license.drm.technology/license/example" name="license_server_url" />
+    </paramGroup>
+    <paramGroup id="widevine">
+      <meta content="EhBJX1PAVgVaY5Uo5uRHYo1bGgZ2dWFsdG8iB2V4YW1wbGVI49yVmwY=" name="drm_specific_data" />
+      <meta content="2F9529A37DB3D73EF3DC4C53B54E1411:F1A44AB08900A819F36F964712893953" name="key" />
+      <meta content="https://widevine-proxy.drm.technology/proxy" name="license_server_url" />
+    </paramGroup>
+  <paramGroup id="iss"><meta name="key" content="2F9529A37DB3D73EF3DC4C53B54E1411:F1A44AB08900A819F36F964712893953" /><meta name="key_iv" content="F02D3561DE504EE6" /><meta name="license_server_url" content="https://playready-license.drm.technology/rightsmanager.asmx" /></paramGroup><content="sample_aes_streamingkeydelivery" name="iss_playout" /></head>
+  <body>
+    <switch>
+      <audio src="2016_guadalajara_world_masters.ismv" systemBitrate="256000">
+        <param name="trackID" value="1" valueType="data" />
+        <param name="trackName" value="audio" valueType="data" />
+        <param name="TimeScale" value="48000" valueType="data" />
+        <param name="SamplingRate" value="48000" valueType="data" />
+        <param name="Channels" value="2" valueType="data" />
+        <param name="BitsPerSample" value="16" valueType="data" />
+        <param name="PacketSize" value="4" valueType="data" />
+        <param name="AudioTag" value="255" valueType="data" />
+        <param name="FourCC" value="AACL" valueType="data" />
+        <param name="CodecPrivateData" value="119056E500" valueType="data" />
+      </audio>
+      <video src="2016_guadalajara_world_masters.ismv" systemBitrate="15008000">
+        <param name="trackID" value="2" valueType="data" />
+        <param name="trackName" value="video" valueType="data" />
+        <param name="TimeScale" value="600" valueType="data" />
+        <param name="MaxWidth" value="1920" valueType="data" />
+        <param name="MaxHeight" value="1080" valueType="data" />
+        <param name="FourCC" value="AVC1" valueType="data" />
+        <param name="CodecPrivateData" value="0000000167640029AC2CA401E0111F780A50101014000003000400000300CA76858B920000000168C9B35250" valueType="data" />
+      </video>
+    </switch>
+  </body>
+</smil>
