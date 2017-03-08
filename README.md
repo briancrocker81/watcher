@@ -8,3 +8,5 @@ Initially built as an headspace POC to test for:
 * Copying the file when changes occur
 * writing back to new file
 * Rspec tests
+
+To run do filewatcher.rb from the terminal
