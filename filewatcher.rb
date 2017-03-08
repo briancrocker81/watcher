@@ -13,18 +13,22 @@ module FolderWatcher
     dir = 'src_ism'
     FileWatcher.new(dir +'/*').watch do |filename|
       MyLog.log.info("file: #{filename} has changed")
-      copyfile(filename)
+      copy_file(filename)
     end
   end
 
-  def copyfile(filename)
+  def copy_file(filename)
     unless filename.include? "_aes"
-      FileUtils.cp filename, "#{filename}_aes.ism"
+      aes_file = FileUtils.cp filename, "#{filename}_aes.ism"
       MyLog.log.info("file: #{filename} has copied and renamed to: #{filename}_aes.ism")
+      rotate_keys(aes_file)
     end
-
   # if copyfile exists do nothing
   # else
+  end
+
+  def rotate_keys(aes_file)
+    MyLog.log.info("Rotate key")
   end
 
   # puts Watcher.instance_methods

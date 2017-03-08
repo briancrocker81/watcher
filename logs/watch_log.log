@@ -141,3 +141,17 @@ I, [2017-03-08 14:48:10 #36118]  INFO -- : file: src_ism/channel1.ism_aes.ism ha
 I, [2017-03-08 14:48:16 #36118]  INFO -- : file: src_ism/channel1.ism has changed
 I, [2017-03-08 14:48:16 #36118]  INFO -- : file: src_ism/channel1.ism has copied and renamed to: src_ism/channel1.ism_aes.ism
 I, [2017-03-08 14:48:16 #36118]  INFO -- : file: src_ism/channel1.ism_aes.ism has changed
+I, [2017-03-08 14:51:09 #36118]  INFO -- : file: src_ism/channel1.ism has changed
+I, [2017-03-08 14:51:09 #36118]  INFO -- : file: src_ism/channel1.ism has copied and renamed to: src_ism/channel1.ism_aes.ism
+I, [2017-03-08 14:51:09 #36118]  INFO -- : file: src_ism/channel1.ism_aes.ism has changed
+D, [2017-03-08T14:58:35.056069 #36278] DEBUG -- : ----- Log started at 08/03/2017 14:58 -----
+I, [2017-03-08 14:58:35 #36278]  INFO -- : file: src_ism/channel1.ism has changed
+I, [2017-03-08 14:58:35 #36278]  INFO -- : file: src_ism/channel1.ism has copied and renamed to: src_ism/channel1.ism_aes.ism
+D, [2017-03-08T14:59:04.090290 #36283] DEBUG -- : ----- Log started at 08/03/2017 14:59 -----
+I, [2017-03-08 14:59:04 #36283]  INFO -- : file: src_ism/channel1.ism has changed
+I, [2017-03-08 14:59:04 #36283]  INFO -- : file: src_ism/channel1.ism has copied and renamed to: src_ism/channel1.ism_aes.ism
+D, [2017-03-08T14:59:55.127173 #36291] DEBUG -- : ----- Log started at 08/03/2017 14:59 -----
+I, [2017-03-08 14:59:55 #36291]  INFO -- : file: src_ism/channel1.ism has changed
+I, [2017-03-08 14:59:55 #36291]  INFO -- : file: src_ism/channel1.ism has copied and renamed to: src_ism/channel1.ism_aes.ism
+I, [2017-03-08 14:59:55 #36291]  INFO -- : Rotate key
+I, [2017-03-08 14:59:55 #36291]  INFO -- : file: src_ism/channel1.ism_aes.ism has changed
