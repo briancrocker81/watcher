@@ -1,0 +1,4 @@
+D, [2017-03-08T10:37:51.433876 #32429] DEBUG -- : ----- Log started at 08/03/2017 10:37 -----
+I, [2017-03-08 10:37:51 #32429]  INFO -- : file: /Users/brian/code/ruby/watcher/channel1.ism has changed
+D, [2017-03-08T10:38:15.516537 #32433] DEBUG -- : ----- Log started at 08/03/2017 10:38 -----
+I, [2017-03-08 10:38:15 #32433]  INFO -- : file: /Users/brian/code/ruby/watcher/channel1.ism has changed
