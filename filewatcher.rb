@@ -1,7 +1,8 @@
 require 'filewatcher'
+require 'logger'
 
-puts Dir.pwd
+dir = Dir.pwd
 
-FileWatcher.new('./').watch do |filename|
+FileWatcher.new(dir).watch do |filename|
   puts "file #{filename} changed"
 end
