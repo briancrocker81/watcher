@@ -1,4 +1,4 @@
-# watcher
+# Watcher
 Ruby folder watcher with logging, file copying and amendments
 
 Initially built as an headspace POC to test for:
@@ -9,4 +9,4 @@ Initially built as an headspace POC to test for:
 * writing back to new file
 * Rspec tests
 
-To run do filewatcher.rb from the terminal
+To run do watcher.rb from the terminal

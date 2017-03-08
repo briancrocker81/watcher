@@ -7,7 +7,7 @@ require_relative 'logger'
 # File.open("logs/watch_log.log", "a") {|f| f.write("----- Log started at " + Time.now.strftime("%d/%m/%Y %H:%M") + " -----" + "\n") }
 
 
-module FolderWatcher
+module Watcher
 
   def watch_folder
     dir = 'src_ism'
@@ -34,5 +34,5 @@ module FolderWatcher
   # puts Watcher.instance_methods
 end
 
-include FolderWatcher
+include Watcher
 watch_folder
