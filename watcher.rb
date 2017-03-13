@@ -11,22 +11,27 @@ module Watcher
 
   def watch_folder
     dir = 'src_ism'
+    # ToDo add check for watching only non aes_files here
     FileWatcher.new(dir +'/*').watch do |filename|
+
       MyLog.log.info("file: #{filename} has changed")
       copy_file(filename)
+
     end
   end
 
   def copy_file(filename)
-    unless filename.include? "_aes" #ignore any aes file changes
+    unless filename.include?("_aes") #ignore any aes file changes
       aes_file = filename + "_aes"
       if File.file?(aes_file)
         # if aes file already exists do not copy, just update
-        update_file
+        update_file(aes_file)
         MyLog.log.info("file: #{aes_file} has been updated")
       else
         # else (copy and update)
-        aes_file = FileUtils.cp filename, "#{filename}_aes.ism"
+        # strip .ism from filename
+        file = filename[/[^.]+/] #remove characters after fullstop
+        aes_file = FileUtils.cp filename, "#{file}_aes.ism"
         MyLog.log.info("file: #{filename} has copied and renamed to: #{filename}_aes.ism")
         update_file(aes_file)
       end
