@@ -5,7 +5,7 @@ require 'nokogiri'
 require_relative 'logger'
 
 # log_file ||= Logger.new File.new('logs/watch_log.log')
-# File.open("logs/watch_log.log", "a") {|f| f.write("----- Log started at " + Time.now.strftime("%d/%m/%Y %H:%M") + " -----" + "\n") }
+File.open("logs/watch_log.log", "a") {|f| f.write("----- Log started at " + Time.now.strftime("%d/%m/%Y %H:%M") + " -----" + "\n") }
 
 module Watcher
 
